@@ -1,0 +1,45 @@
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-heading {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: blink 15s infinite;
+    background-color: red;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
